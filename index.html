@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushik Kokate | Software Engineer & AI Developer</title>
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-50 text-zinc-900 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-zinc-50/90 backdrop-blur-md border-b border-zinc-200">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center relative">
+            <a href="#hero" class="font-serif font-bold text-xl tracking-tight text-zinc-900">RK.</a>
+            
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
+                <li><a href="#about" class="nav-link transition-colors hover:text-emerald-700">About</a></li>
+                <li><a href="#experience" class="nav-link transition-colors hover:text-emerald-700">Experience</a></li>
+                <li><a href="#projects" class="nav-link transition-colors hover:text-emerald-700">Projects</a></li>
+                <li><a href="#certifications" class="nav-link transition-colors hover:text-emerald-700">Credentials</a></li>
+                <li><a href="#contact" class="nav-link transition-colors hover:text-emerald-700">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-600 focus:outline-none hover:text-emerald-700 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-zinc-50 border-b border-zinc-200 shadow-md flex-col px-6 py-4 space-y-4">
+            <a href="#about" class="mobile-nav-link text-zinc-500 hover:text-emerald-700 text-sm font-medium transition-colors">About</a>
+            <a href="#experience" class="mobile-nav-link text-zinc-500 hover:text-emerald-700 text-sm font-medium transition-colors">Experience</a>
+            <a href="#projects" class="mobile-nav-link text-zinc-500 hover:text-emerald-700 text-sm font-medium transition-colors">Projects</a>
+            <a href="#certifications" class="mobile-nav-link text-zinc-500 hover:text-emerald-700 text-sm font-medium transition-colors">Credentials</a>
+            <a href="#contact" class="mobile-nav-link text-zinc-500 hover:text-emerald-700 text-sm font-medium transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex flex-col justify-center pt-28 md:pt-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Side -->
+                <div class="md:col-span-7 order-2 md:order-1">
+                    <p class="text-emerald-600 font-bold mb-4 tracking-wide uppercase text-sm">Portfolio &bull; Pune, India</p>
+                    <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-zinc-900 tracking-tight mb-6">
+                        Rushik Kokate
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl text-zinc-600 font-serif mb-8 leading-snug">
+                        Software Engineer & AI Developer. 
+                    </h2>
+                    <p class="text-zinc-500 text-base md:text-lg mb-10 leading-relaxed pr-0 md:pr-4">
+                        I build clean web applications and integrate smart AI systems. My work focuses on practical front-end development, machine learning pipelines, and using AI tools to solve real-world problems.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                        <a href="#projects" class="w-full sm:w-auto text-center px-7 py-3 bg-emerald-700 text-white rounded-sm hover:bg-emerald-800 transition-colors text-sm font-medium">
+                            View My Work
+                        </a>
+                        
+                        <!-- Download Resume Button -->
+                        <a href="Rushik_Kokate_Resume2.pdf" download class="w-full sm:w-auto justify-center px-7 py-3 border border-zinc-200 bg-white text-zinc-900 rounded-sm hover:border-emerald-700 hover:text-emerald-700 transition-colors text-sm font-medium flex items-center gap-2">
+                            <span>Download Resume</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        </a>
+
+                        <a href="https://github.com/Kokate-Rushik" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-7 py-3 text-zinc-500 hover:text-emerald-700 transition-colors text-sm font-medium">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image Placeholder Side -->
+                <div class="md:col-span-5 order-1 md:order-2">
+                    <div class="w-full aspect-square bg-white border border-zinc-200 rounded-sm shadow-sm flex items-center justify-center text-zinc-400 relative overflow-hidden group">
+                        
+                        <img src="assets/Myself.png" alt="Rushik Kokate" class="absolute inset-0 w-full h-full object-contain">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-zinc-200">
+
+        <!-- About & Skills Section -->
+        <section id="about" class="py-20 md:py-32 scroll-mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-5">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-zinc-900 mb-6">Background</h2>
+                    <p class="text-zinc-500 leading-relaxed mb-6">
+                        I am currently an undergraduate student pursuing a Bachelor of Engineering in Computer Engineering at Genba Sopanrao Moze College Of Engineering (Aug 2023 – Aug 2027), holding a CGPA of 9.18. 
+                    </p>
+                    <p class="text-zinc-500 leading-relaxed mb-6">
+                        Alongside my academic work, I am actively involved in developer communities, currently serving as a Google Student Ambassador to promote AI innovation on campus.
+                    </p>
+                </div>
+                
+                <div class="md:col-span-7">
+                    <h3 class="font-serif text-2xl font-bold text-zinc-900 mb-6">Technical Skills</h3>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4">AI & Data Science</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium rounded-sm shadow-sm">Machine Learning</span>
+                                <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium rounded-sm shadow-sm">LangChain & LangGraph</span>
+                                <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium rounded-sm shadow-sm">RAG Systems</span>
+                                <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium rounded-sm shadow-sm">ChromaDB</span>
+                                <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium rounded-sm shadow-sm">Prompt Engineering</span>
+                                <span class="px-3 py-1.5 bg-emerald-50 border border-emerald-100 text-emerald-800 text-sm font-medium rounded-sm shadow-sm">Data Analysis</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-4">Web Engineering</h4>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">Python</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">JavaScript</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">NextJS</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">MERN Stack</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">FastAPI</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">NestJS</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">Flask</span>
+                                <span class="px-3 py-1.5 bg-white border border-zinc-200 text-zinc-600 text-sm font-medium rounded-sm shadow-sm">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-zinc-200">
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 md:py-32 scroll-mt-20">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-zinc-900 mb-12 md:mb-16">Experience</h2>
+            
+            <div class="space-y-12">
+                <!-- Job 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 border-l-2 border-emerald-200 pl-6 md:pl-8 py-2 relative">
+                    <div class="absolute w-3 h-3 bg-emerald-600 rounded-full -left-[7px] top-4"></div>
+                    <div class="md:col-span-1 mt-2 md:mt-0">
+                        <p class="text-sm font-bold text-emerald-700 uppercase tracking-wider">May 2026 - Present</p>
+                        <p class="text-sm text-zinc-500 mt-1">Pune, India</p>
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="font-serif text-2xl font-bold text-zinc-900">Campus Ambassador</h3>
+                        <p class="text-zinc-900 font-medium mb-3">Google Student Ambassadors (India)</p>
+                        <p class="text-zinc-600 leading-relaxed text-sm">
+                            Leading on-campus AI community-building initiatives and technical workshops to drive peer engagement and student-led AI innovation. Fostering developer communities focused on Google Gemini and generative AI tools.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 border-l-2 border-zinc-200 pl-6 md:pl-8 py-2 relative">
+                    <div class="absolute w-3 h-3 bg-zinc-300 rounded-full -left-[7px] top-4"></div>
+                    <div class="md:col-span-1 mt-2 md:mt-0">
+                        <p class="text-sm font-bold text-zinc-900 uppercase tracking-wider">Feb - May 2026</p>
+                        <p class="text-sm text-zinc-500 mt-1">Remote</p>
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="font-serif text-2xl font-bold text-zinc-900">Agentic AI Intern</h3>
+                        <p class="text-zinc-900 font-medium mb-3">Innomatics Research Labs</p>
+                        <p class="text-zinc-600 leading-relaxed text-sm">
+                            Architected an Agentic PC Builder and automated Retrieval-Augmented Generation (RAG) workflows. Utilized LangGraph, LangChain, and FastAPI to deliver production-grade Large Language Model (LLM) orchestration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 border-l-2 border-zinc-200 pl-6 md:pl-8 py-2 relative">
+                    <div class="absolute w-3 h-3 bg-zinc-300 rounded-full -left-[7px] top-4"></div>
+                    <div class="md:col-span-1 mt-2 md:mt-0">
+                        <p class="text-sm font-bold text-zinc-900 uppercase tracking-wider">Feb - Apr 2026</p>
+                        <p class="text-sm text-zinc-500 mt-1">Remote</p>
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="font-serif text-2xl font-bold text-zinc-900">Data Scientist Intern</h3>
+                        <p class="text-zinc-900 font-medium mb-3">Itvedant Education Pvt. Ltd.</p>
+                        <p class="text-zinc-600 leading-relaxed text-sm">
+                            Engineered and deployed a production-grade Phishing URL Detection pipeline. The project involved statistical profiling, feature engineering, and deploying a tuned Random Forest model with a Flask API on Render to achieve sub-50ms inference latency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 border-l-2 border-zinc-200 pl-6 md:pl-8 py-2 relative">
+                    <div class="absolute w-3 h-3 bg-zinc-300 rounded-full -left-[7px] top-4"></div>
+                    <div class="md:col-span-1 mt-2 md:mt-0">
+                        <p class="text-sm font-bold text-zinc-900 uppercase tracking-wider">Jan - Feb 2026</p>
+                        <p class="text-sm text-zinc-500 mt-1">Remote</p>
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="font-serif text-2xl font-bold text-zinc-900">Data Science & Analytics Intern</h3>
+                        <p class="text-zinc-900 font-medium mb-3">Amdox Technologies</p>
+                        <p class="text-zinc-600 leading-relaxed text-sm">
+                            Developed "Quantara," a cryptocurrency forecasting dashboard. Implemented predictive machine learning models and real-time data visualization pipelines to analyze market trends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-zinc-200">
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 md:py-32 scroll-mt-20">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-zinc-900 mb-12 md:mb-16">My Projects</h2>
+
+            <!-- Main Project 1 -->
+            <article class="bg-white border border-zinc-200 rounded-sm p-6 sm:p-8 md:p-12 mb-8 hover:border-emerald-300 shadow-sm transition-colors group">
+                <div class="flex flex-col md:flex-row gap-8 justify-between">
+                    <div class="md:w-2/3">
+                        <h3 class="font-serif text-2xl md:text-3xl font-bold text-zinc-900 mb-4 group-hover:text-emerald-800 transition-colors">Nikas Exim Global</h3>
+                        <p class="text-xs md:text-sm text-emerald-600 mb-4 uppercase tracking-wider font-bold">Freelance Web Development</p>
+                        <p class="text-zinc-600 mb-6 leading-relaxed text-sm md:text-base">
+                            An international trade and export platform designed to showcase products, track inventory, and handle global trade documents. It combines a user-friendly public website featuring dynamic language support with a secure private dashboard for business operations.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="bg-zinc-50 p-4 border border-zinc-100 rounded-sm">
+                                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider">How I Built It</h4>
+                                <p class="text-sm text-zinc-600 mt-2 leading-relaxed">
+                                    To solve slow page loading caused by heavy PDF certificates and high-resolution product photos, I implemented strict asset compression, lazy-loading, and static caching. I also built a secure JWT authentication system in FastAPI. This separated public API routes from private admin routes, ensuring that trade compliance documents remained safe while the product catalog stayed open to global buyers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 border-t md:border-t-0 md:border-l border-zinc-100 pt-6 md:pt-0 md:pl-8">
+                        <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-3">Tech Stack</h4>
+                        <ul class="text-sm text-zinc-500 space-y-3">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>React.js</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>FastAPI (Python)</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>MongoDB & File Vault</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>JWT Authentication</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>Zoho Mail</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Main Project 2 -->
+            <article class="bg-white border border-zinc-200 rounded-sm p-6 sm:p-8 md:p-12 mb-16 hover:border-emerald-300 shadow-sm transition-colors group">
+                <div class="flex flex-col md:flex-row gap-8 justify-between">
+                    <div class="md:w-2/3">
+                        <h3 class="font-serif text-2xl md:text-3xl font-bold text-zinc-900 mb-4 group-hover:text-emerald-800 transition-colors">Domain-Aware Library Search Engine</h3>
+                        <p class="text-xs md:text-sm text-emerald-600 mb-4 uppercase tracking-wider font-bold">College RAG Project</p>
+                        <p class="text-zinc-600 mb-6 leading-relaxed text-sm md:text-base">
+                            An intelligent search and recommendation tool built for university students to easily find academic materials. Instead of exact title matches, it uses AI and Natural Language Processing (NLP) to understand the meaning behind a student's search query.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="bg-zinc-50 p-4 border border-zinc-100 rounded-sm">
+                                <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider">How I Built It</h4>
+                                <p class="text-sm text-zinc-600 mt-2 leading-relaxed">
+                                    Traditional systems fail when search words don't exactly match book titles. I solved this by converting book descriptions into numerical embeddings using `nomic-embed-text` and storing them in ChromaDB. To handle broad or vague searches, I layered a custom "Subject Map" classification step using a local LLM. This identifies the topic first before searching the database, keeping results accurate and API costs at zero.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 border-t md:border-t-0 md:border-l border-zinc-100 pt-6 md:pt-0 md:pl-8">
+                        <h4 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-3">Tech Stack</h4>
+                        <ul class="text-sm text-zinc-500 space-y-3">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>Python & Pandas</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>ChromaDB</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>Ollama & OpenRouter API</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>Local Gemma Models</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>NLP Embeddings</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>NextJS (UI)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Other Work Grid -->
+            <h3 class="font-serif text-2xl font-bold text-zinc-900 mb-8">Other Technical Work</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Phishing Pipeline -->
+                <div class="bg-white border border-zinc-200 p-6 rounded-sm flex flex-col justify-between shadow-sm hover:border-emerald-200 transition-colors">
+                    <div>
+                        <h4 class="font-serif text-xl font-bold text-zinc-900 mb-2">Phishing URL Detector</h4>
+                        <p class="text-sm text-zinc-600 mb-6">An end-to-end Machine Learning pipeline that analyzes URLs to detect phishing threats using a consensus framework.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 p-2 rounded-sm uppercase">
+                        <span>Random Forest</span> &bull; <span>Flask</span> &bull; <span>Render</span>
+                    </div>
+                </div>
+                <!-- Quantara -->
+                <div class="bg-white border border-zinc-200 p-6 rounded-sm flex flex-col justify-between shadow-sm hover:border-emerald-200 transition-colors">
+                    <div>
+                        <h4 class="font-serif text-xl font-bold text-zinc-900 mb-2">Quantara Dashboard</h4>
+                        <p class="text-sm text-zinc-600 mb-6">A cryptocurrency tracking and forecasting dashboard combining real-time visualization with predictive modeling.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 p-2 rounded-sm uppercase">
+                        <span>Machine Learning</span> &bull; <span>Data Viz</span>
+                    </div>
+                </div>
+                <!-- Agentic PC Builder -->
+                <div class="bg-white border border-zinc-200 p-6 rounded-sm flex flex-col justify-between shadow-sm hover:border-emerald-200 transition-colors">
+                    <div>
+                        <h4 class="font-serif text-xl font-bold text-zinc-900 mb-2">Agentic PC Builder</h4>
+                        <p class="text-sm text-zinc-600 mb-6">An intelligent workflow tool that assists in building PC configurations by processing user requirements through an LLM.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 p-2 rounded-sm uppercase">
+                        <span>LangChain</span> &bull; <span>FastAPI</span> &bull; <span>RAG</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-zinc-200">
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 md:py-32 scroll-mt-20">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-zinc-900 mb-10">Licenses & Certifications</h2>
+            
+            <div class="flex flex-col space-y-12">
+                
+                <!-- Certification 1 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-10 border-b border-zinc-200 pb-12 last:border-0 last:pb-0">
+                    <!-- Image Container (Uncropped, scales to fit) -->
+                    <div class="w-full md:w-1/3 shrink-0 bg-white border border-zinc-200 rounded-sm flex items-center justify-center shadow-sm p-2">
+                        <img src="assets/IRL.jpg" alt="Agentic AI Intern Certificate" class="w-full h-auto object-contain rounded-sm">
+                    </div>
+                    <div class="flex flex-col flex-grow justify-center">
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-zinc-900">Agentic AI Intern Certificate</h3>
+                        <p class="text-emerald-700 font-medium text-sm mt-2 mb-3">Innomatics Research Labs &bull; Issued May 2026</p>
+                        <p class="text-zinc-600 mb-6 leading-relaxed text-sm md:text-base">Recognizes proficiency in AI frameworks, FastAPI, LangChain, RAG, AI Agents, and LangGraph.</p>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-10 border-b border-zinc-200 pb-12 last:border-0 last:pb-0">
+                    <!-- Image Container (Uncropped, scales to fit) -->
+                    <div class="w-full md:w-1/3 shrink-0 bg-white border border-zinc-200 rounded-sm flex items-center justify-center shadow-sm p-2">
+                        <img src="assets/ITVE.png" alt="Data Scientist Intern Certificate" class="w-full h-auto object-contain rounded-sm">
+                    </div>
+                    <div class="flex flex-col flex-grow justify-center">
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-zinc-900">Data Scientist Intern Certificate</h3>
+                        <p class="text-emerald-700 font-medium text-sm mt-2 mb-3">Itvedant Education Pvt. Ltd. &bull; Issued Apr 2026</p>
+                        <p class="text-zinc-600 mb-6 leading-relaxed text-sm md:text-base">Awarded for the successful architectural deployment of a production-grade ML pipeline.</p>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-10 border-b border-zinc-200 pb-12 last:border-0 last:pb-0">
+                    <!-- Image Container (Uncropped, scales to fit) -->
+                    <div class="w-full md:w-1/3 shrink-0 bg-white border border-zinc-200 rounded-sm flex items-center justify-center shadow-sm p-2">
+                        <img src="assets/AMDOX.jpg" alt="Data Science Analytics Certificate" class="w-full h-auto object-contain rounded-sm">
+                    </div>
+                    <div class="flex flex-col flex-grow justify-center">
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-zinc-900">Data Science & Analytics Certificate</h3>
+                        <p class="text-emerald-700 font-medium text-sm mt-2 mb-3">Amdox Technologies &bull; Issued Feb 2026</p>
+                        <p class="text-zinc-600 mb-6 leading-relaxed text-sm md:text-base">Awarded for successful completion of the data science sprints and forecasting model projects.</p>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-10 border-b border-zinc-200 pb-12 last:border-0 last:pb-0">
+                    <!-- Image Container (Uncropped, scales to fit) -->
+                    <div class="w-full md:w-1/3 shrink-0 bg-white border border-zinc-200 rounded-sm flex items-center justify-center shadow-sm p-2">
+                        <img src="assets/GSA.jpg" alt="Google Student Ambassador Certificate" class="w-full h-auto object-contain rounded-sm">
+                    </div>
+                    <div class="flex flex-col flex-grow justify-center">
+                        <h3 class="font-serif text-xl md:text-2xl font-bold text-zinc-900">Google Student Ambassador</h3>
+                        <p class="text-emerald-700 font-medium text-sm mt-2 mb-3">Google Student Ambassadors (India) &bull; 2026</p>
+                        <p class="text-zinc-600 leading-relaxed text-sm md:text-base">Official selection to represent student-led AI innovation and technical community building.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-zinc-200">
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 scroll-mt-20 mb-10 md:mb-20">
+            <div class="max-w-2xl">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-zinc-900 mb-6">Contact</h2>
+                <p class="text-zinc-600 mb-10 leading-relaxed text-sm md:text-base">
+                    I am currently open to new opportunities and projects. If you have a question or want to work together, send me a message or connect with me online.
+                </p>
+                
+                <div class="flex flex-col md:flex-row gap-12">
+                    <!-- Form -->
+                    <form class="w-full md:w-2/3 flex flex-col gap-4">
+                        <label class="sr-only" for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name" class="w-full border border-zinc-200 bg-white rounded-sm p-3.5 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 text-sm placeholder:text-zinc-400 shadow-sm transition-shadow" required>
+                        
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email Address" class="w-full border border-zinc-200 bg-white rounded-sm p-3.5 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 text-sm placeholder:text-zinc-400 shadow-sm transition-shadow" required>
+                        
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Message" class="w-full border border-zinc-200 bg-white rounded-sm p-3.5 focus:outline-none focus:border-emerald-600 focus:ring-1 focus:ring-emerald-600 text-sm placeholder:text-zinc-400 resize-none shadow-sm transition-shadow" required></textarea>
+                        
+                        <button type="submit" class="w-full sm:w-auto sm:self-start px-8 py-3.5 bg-emerald-700 text-white rounded-sm hover:bg-emerald-800 transition-colors text-sm font-medium mt-2">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <!-- Links -->
+                    <div class="w-full md:w-1/3 flex flex-col space-y-5">
+                        <h3 class="text-sm font-bold text-zinc-900 uppercase tracking-wider mb-1 border-b border-zinc-200 pb-2">Connect</h3>
+                        <a href="https://github.com/Kokate-Rushik" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-emerald-700 transition-colors text-sm flex items-center gap-3 font-medium">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-emerald-700 transition-colors text-sm flex items-center gap-3 font-medium">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Dark Footer to anchor the page -->
+    <footer class="bg-zinc-900 py-12 border-t border-zinc-900 mt-10">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-sm text-zinc-400 tracking-wide">&copy; 2026 Rushik Kokate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
